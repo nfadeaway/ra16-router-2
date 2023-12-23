@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300italic,300,400italic);
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+#root {
+  display: flex;
+  max-width: 1280px;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+  /*justify-content: center;*/
+  margin-top: 100px;
+}
+
+/* Global Styles */
+
+html,body {
+  color:#333;
+  font-family:"Work Sans", sans-serif;
+  line-height:1.4;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+*,::before,::after {
+  box-sizing:border-box;
+}
+
+:focus {
+  outline:none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.post {
+  display: flex;
+  width: 400px;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+
+.add-post-btn {
+  margin-bottom: 10px;
+}
+
+.edit-post, .delete-post, .save-edit-post, .save-new-post, .add-post-btn {
+  padding: 5px 10px;
+  color: white;
+  font-size: 12px;
+}
+
+.delete-post {
+  background-color: #B04546;
+  margin-left: 10px;
+}
+
+.save-edit-post,
+.save-new-post,
+.edit-post,
+.add-post-btn {
+  background-color: #4469AE;
+}
+
+.edit-post-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid lightgrey;
+}
+
+.edit-post:hover, 
+.delete-post:hover,
+.save-edit-post:hover,
+.cancel-btn:hover,
+.save-new-post:hover,
+.add-post-btn:hover {
+  cursor: pointer;
+} 
+
+.hidden {
+  display: none;
+}
